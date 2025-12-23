@@ -1,4 +1,6 @@
 class Aidocs < Formula
+  include Language::Python::Virtualenv
+
   desc "AI-powered documentation generator CLI for Claude Code"
   homepage "https://github.com/binarcode/aidocs-cli"
   url "https://github.com/binarcode/aidocs-cli/archive/refs/tags/v0.13.2.tar.gz"
