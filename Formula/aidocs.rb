@@ -3,15 +3,15 @@ class Aidocs < Formula
 
   desc "AI-powered documentation generator CLI for Claude Code"
   homepage "https://github.com/binarcode/aidocs-cli"
-  url "https://github.com/BinarCode/aidocs-cli/archive/refs/tags/v0.18.0.tar.gz"
-  sha256 "72cb5f933c56900abfdf37bb37bac84b29d0be6a0b03d93415cefe908454c502"
+  url "https://github.com/BinarCode/aidocs-cli/archive/refs/tags/v0.21.0.tar.gz"
+  sha256 "82118335ef841c1ea820b804a0a46d4580be6b186ea181d11a365ba7a61d8408"
   license "MIT"
 
   depends_on "python@3.11"
 
   def install
     venv = virtualenv_create(libexec, "python3.11")
-    venv.pip_install "aidocs==0.18.0"
+    venv.pip_install "aidocs==0.21.0"
     bin.install_symlink libexec/"bin/aidocs"
   end
 
